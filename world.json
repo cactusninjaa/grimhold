@@ -1,0 +1,70 @@
+{
+  "start": "crossroads",
+  "regions": [
+    {
+      "id": "crossroads",
+      "name": "Gallows Crossroads",
+      "description": "Four muddy roads meet beneath an empty gibbet. A lantern burns in the waystone, and no one remembers lighting it.",
+      "arrival": "You return to the Gallows Crossroads. The empty noose sways, though there is no wind.",
+      "danger": 0,
+      "foes": ["giant-rat", "bandit", "cultist"],
+      "exits": ["ashen-marsh", "whispering-pines"]
+    },
+    {
+      "id": "ashen-marsh",
+      "name": "Ashen Marsh",
+      "description": "Fog, iron, and things that breathe under the water. Grey reeds crumble to soot at your touch.",
+      "arrival": "You trudge into the Ashen Marsh. The fog smells of iron.",
+      "danger": 1,
+      "foes": ["goblin", "skeleton", "zombie", "ghoul"],
+      "exits": ["crossroads", "drowned-chapel"]
+    },
+    {
+      "id": "whispering-pines",
+      "name": "Whispering Pines",
+      "description": "Black pines lean close and murmur names. Some of them are yours.",
+      "arrival": "The pines close behind you. Something in the needles whispers your name, then laughs.",
+      "danger": 1,
+      "foes": ["wolf", "goblin", "giant-spider"],
+      "exits": ["crossroads", "bone-quarry"]
+    },
+    {
+      "id": "drowned-chapel",
+      "name": "Drowned Chapel",
+      "description": "A chapel sunk to its knees in black water. The bell still rings at midnight, from below.",
+      "arrival": "You wade into the Drowned Chapel. Cold water fills your boots like a grave fills with rain.",
+      "danger": 2,
+      "foes": ["zombie", "ghoul", "shadow", "specter"],
+      "exits": ["ashen-marsh", "bone-quarry", "barrow-throne"]
+    },
+    {
+      "id": "bone-quarry",
+      "name": "Bone Quarry",
+      "description": "White terraces cut into the hill. The stone is not stone.",
+      "arrival": "You descend into the Bone Quarry. Every footstep crunches.",
+      "danger": 3,
+      "foes": ["skeleton", "ghast", "dire-wolf", "ogre"],
+      "exits": ["whispering-pines", "drowned-chapel", "mire-of-teeth"]
+    },
+    {
+      "id": "mire-of-teeth",
+      "name": "Mire of Teeth",
+      "description": "A sucking bog studded with yellowed fangs the size of tombstones. Something regrows here.",
+      "arrival": "You step into the Mire of Teeth. The mud is warm, and it is moving.",
+      "danger": 4,
+      "foes": ["mummy", "wight", "troll"],
+      "exits": ["bone-quarry"]
+    },
+    {
+      "id": "barrow-throne",
+      "name": "The Barrow Throne",
+      "description": "A hollow hill crowned with a throne of fused skulls. Its occupant has waited a thousand years for a worthy challenger.",
+      "arrival": "The barrow door grinds open. Pale fire kindles in empty sockets on the throne.",
+      "danger": 4,
+      "min_level": 4,
+      "foes": [],
+      "boss": { "slug": "wight", "title": "The Barrow King", "hp_bonus": 25 },
+      "exits": ["drowned-chapel"]
+    }
+  ]
+}
